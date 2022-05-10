@@ -1,0 +1,67 @@
+body {
+    padding-top: 100px;
+    background: #000000 url('http://cdn28.us1.fansshare.com/photograph/background/background-grey-1827669078.jpg') 
+     
+
+}
+.wrap {
+    position: relative;
+    margin: 0 auto;
+    width: 500px;
+    height: 300px;
+    cursor: pointer;
+}
+
+.wrap div {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-position: 50% 50%;
+    background-size: 550px;
+    background-repeat: no-repeat;
+    
+    color: #161616;
+    text-shadow: 0 1px #161616;
+    font: bold 1em sans-serif;
+}
+
+.side-a {
+    background: #222222 url('https://raw.githubusercontent.com/Luiizb/logo-teste/main/Prancheta%203.png');
+    box-shadow: inset 0 0 60px ;
+   
+    
+}
+.side-b {
+    background: #222222 url('https://raw.githubusercontent.com/Luiizb/logo-teste/main/Prancheta%204.png');
+    box-shadow: inset 0 0 60px ;
+ 
+}
+    
+/*Transform*/
+body {
+    -webkit-perspective: 800px;
+}
+
+.wrap {
+    transition: -webkit-transform 1s ease-in;
+    -webkit-transform-style: preserve-3d;
+}
+
+.wrap div {
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+}
+
+.side-a {
+    z-index: 100;
+}
+
+.side-b {
+    -webkit-transform: rotateY(-180deg);
+}
+
+.wrap:hover {
+    -webkit-transform: rotateY(-.5turn);
+}
+    
+  
